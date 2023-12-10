@@ -31,50 +31,88 @@ p {
 }
 
 /* Header Styles */
-header {
-  background-color: var(--englishViolet);
-  padding: 25px 0
-}
+  header {
+    background-color: var(--englishViolet);
+    padding: 25px 0
+  }
 
-header h1 {
-  display: flex;
-  justify-content: right;
-  align-items: center;
-  width: 256px;
-  padding: 0 16px 0 0;
-  background-color: var(--rosyBrown);
-  color: var(--englishViolet);
-}
+  header h1 {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    width: 256px;
+    padding: 0 16px 0 0;
+    background-color: var(--rosyBrown);
+    color: var(--englishViolet);
+  }
 
-header nav {
+  header nav {
+    display: flex;
+    justify-content: end;
+    column-gap: 32px;
+    padding-right: 128px;
+    align-items: center;
+    position: relative;
+    margin-top: -32px;
+    margin-bottom: 5px;
+  }
+
+  header nav a {
+    text-decoration: none;
+    color: var(--hollywoodCerise);
+    padding: 0 8px 0 8px;
+    border-bottom: 3px solid currentColor;
+    border-radius: 5px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+  }
+
+  header nav a:hover {
+    color: var(--honeydew)
+  }
+
+  header nav a:focus {
+    color: #99FFDA;
+  }
+/*
+*/
+
+/* Hero Styles */
+.heroBanner {
   display: flex;
+  flex-direction: row;
   justify-content: end;
-  column-gap: 32px;
-  padding-right: 128px;
-  align-items: center;
-  position: relative;
-  margin-top: -32px;
-  margin-bottom: 5px;
+  align-items: end;
+  height: 413px;
+  width: 100%;
+  margin-bottom: 25px;
+  background-image: url("../images/Colorful_galaxy_\(Unsplash\).png");
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
 }
 
-header nav a {
-  text-decoration: none;
-  color: var(--hollywoodCerise);
-  padding: 0 8px 0 8px;
-  border-bottom: 3px solid currentColor;
-  border-radius: 5px;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  font-weight: bold;
+#subtitle {
+  color: var(--englishViolet);
+  background-color: var(--rosyBrown);
+  padding: 8px 16px;
+  margin: 32px 128px 32px 32px;
 }
 
-header nav a:hover {
-  color: var(--honeydew)
-}
+/* Tablet View */
+@media screen and (max-width: 915px) {
+  .heroBanner {
+    height: 216px;
+  }
+  
+  header nav {
+    padding-right: 5%;
+  }
 
-header nav a:focus {
-  color: #99FFDA;
+  #subtitle {
+    margin-right: 5%;
+  }
 }
-
 /* Mobile View */
 @media screen and (max-width: 760px) {
   header h1 {
@@ -92,5 +130,11 @@ header nav a:focus {
     padding: 0 1px 0 1px;
     font-size: small;
     font-weight: 100;
+  }
+
+  #subtitle {
+    margin-right: 2%;
+    font-size: medium;
+    padding: 4px;
   }
 }

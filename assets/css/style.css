@@ -1,3 +1,10 @@
+:root {
+  --hollywoodCerise: #E0279D;
+  --rosyBrown: #D5A18E;
+  --englishViolet: #563C5C;
+  --columbiaBlue: #BFD5E2;
+  --honeydew: #ECFFF8;
+}
 * {
   box-sizing: border-box;
 }
@@ -7,6 +14,7 @@ body {
   padding: 0;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   line-height: 1.5;
+  background-color: var(--columbiaBlue);
 }
 
 h1,
@@ -20,4 +28,69 @@ h6 {
 
 p {
   margin: 0;
+}
+
+/* Header Styles */
+header {
+  background-color: var(--englishViolet);
+  padding: 25px 0
+}
+
+header h1 {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  width: 256px;
+  padding: 0 16px 0 0;
+  background-color: var(--rosyBrown);
+  color: var(--englishViolet);
+}
+
+header nav {
+  display: flex;
+  justify-content: end;
+  column-gap: 32px;
+  padding-right: 128px;
+  align-items: center;
+  position: relative;
+  margin-top: -32px;
+  margin-bottom: 5px;
+}
+
+header nav a {
+  text-decoration: none;
+  color: var(--hollywoodCerise);
+  padding: 0 8px 0 8px;
+  border-bottom: 3px solid currentColor;
+  border-radius: 5px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: bold;
+}
+
+header nav a:hover {
+  color: var(--honeydew)
+}
+
+header nav a:focus {
+  color: #99FFDA;
+}
+
+/* Mobile View */
+@media screen and (max-width: 760px) {
+  header h1 {
+    width: 33%;
+    padding: 0 2.5% 0 0;
+    font-size: x-large;
+  }
+
+  header nav {
+    column-gap: 5%;
+    padding-right: 2%;
+  }
+
+  header nav a {
+    padding: 0 1px 0 1px;
+    font-size: small;
+    font-weight: 100;
+  }
 }

@@ -99,6 +99,20 @@ p {
   margin: 32px 128px 32px 32px;
 }
 
+/* Tablet View */
+@media screen and (max-width: 915px) {
+  .heroBanner {
+    height: 216px;
+  }
+  
+  header nav {
+    padding-right: 5%;
+  }
+
+  #subtitle {
+    margin-right: 5%;
+  }
+}
 /* Mobile View */
 @media screen and (max-width: 760px) {
   header h1 {
@@ -116,10 +130,6 @@ p {
     padding: 0 1px 0 1px;
     font-size: small;
     font-weight: 100;
-  }
-
-  .heroBanner {
-    height: 216px;
   }
 
   #subtitle {

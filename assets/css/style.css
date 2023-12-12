@@ -115,7 +115,7 @@ p {
 .pageSection {
   display: flex;
   flex-direction: row;
-  justify-content: start;
+  justify-content: center;
   margin-bottom: 25px;
 }
 
@@ -201,34 +201,63 @@ p {
 }
 
 /* Project Placeholders */
-#projectTwo {
-  background-image: url(../images/projectPlaceholder1.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
+  #projectTwo {
+    background-image: url(../images/projectPlaceholder1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  #projectThree {
+    background-image: url(../images/projectPlaceholder2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  #projectFour {
+    background-image: url(../images/projectPlaceholder3.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  #projectFive {
+    background-image: url(../images/projectPlaceholder4.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+/*
+*/
+
+.contentContact {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 25%;
+  height: 64px;
+  border-left: 4px solid var(--englishViolet);
+  margin-left: 15px;
+  margin-right: 25%;
 }
 
-#projectThree {
-  background-image: url(../images/projectPlaceholder2.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
+.contentContact a {
+  text-decoration: none;
+  color: var(--englishViolet);
+  border-bottom: 3px solid currentColor;
+  border-radius: 5px;
+  font-weight: bold;
 }
 
-#projectFour {
-  background-image: url(../images/projectPlaceholder3.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
+.contentContact a:hover {
+  color: var(--hollywoodCerise)
 }
 
-#projectFive {
-  background-image: url(../images/projectPlaceholder4.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
+.contentContact a:focus {
+  color: var(--rosyBrown);
 }
-
 /* Tablet View */
 @media screen and (max-width: 1080px) {
   .heroBanner {
@@ -241,6 +270,10 @@ p {
 
   #subtitle {
     margin-right: 5%;
+  }
+
+  .pageSection {
+    justify-content: start;
   }
 
   .pageSection h2 {
@@ -256,6 +289,12 @@ p {
   }
 
   .contentWork {
+    width: 70%;
+    padding-left: 16px;
+  }
+
+  .contentContact {
+    margin-right: 0;
     width: 70%;
     padding-left: 16px;
   }
@@ -330,5 +369,17 @@ p {
   .projectDetails {
     font-size: small;
     margin-bottom: 0;
+  }
+
+  .contentContact {
+    flex-direction: column;
+    border-left: 0px;
+    border-top: 4px solid var(--englishViolet);
+    margin: 2.5%;
+    width: 75%;
+    padding-left: 0;
+    align-items: center;
+    font-size: small;
+    font-weight: 100;
   }
 }

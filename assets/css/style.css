@@ -151,6 +151,84 @@ p {
   border-radius: 75px;
 }
 
+.contentWork {
+  display: grid;
+  width: 50%;
+  height: 1024px;
+  border-left: 4px solid var(--englishViolet);
+  margin-left: 15px;
+  padding-left: 50px;
+  padding-bottom: 50px;
+  padding-top: 20px;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 50% 25% 25%;
+  gap: 15px;
+}
+
+.contentWork a {
+  border: 6px solid var(--rosyBrown);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  font: inherit;
+  text-align: inherit;
+  background-color: inherit;
+  text-decoration: none;
+}
+
+.contentWork a:hover {
+  transition: 0.9s ease;
+  background-blend-mode: overlay;
+  background-color: rgba(153, 255, 218, 0.35)
+}
+
+.projectDetails {
+  background-color: var(--rosyBrown);
+  color: var(--englishViolet);
+  width: fit-content;
+  position: relative;
+  margin-bottom: -33%;
+  padding: 4px 8px;
+}
+
+#projectOne {
+  grid-column: 1 / 3;
+  background-image: url(../images/portolioProject.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* Project Placeholders */
+#projectTwo {
+  background-image: url(../images/projectPlaceholder1.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#projectThree {
+  background-image: url(../images/projectPlaceholder2.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#projectFour {
+  background-image: url(../images/projectPlaceholder3.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#projectFive {
+  background-image: url(../images/projectPlaceholder4.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 /* Tablet View */
 @media screen and (max-width: 915px) {
   .heroBanner {

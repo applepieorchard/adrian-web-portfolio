@@ -230,7 +230,7 @@ p {
 }
 
 /* Tablet View */
-@media screen and (max-width: 915px) {
+@media screen and (max-width: 1080px) {
   .heroBanner {
     height: 216px;
   }
@@ -245,14 +245,22 @@ p {
 
   .pageSection h2 {
     margin: 0 0 0 5%;
+    padding: 4px 8px;
     width: 15%;
+    font-size: large;
   }
 
   .contentAbout {
-    width: 95%;
+    width: 70%;
+    padding-left: 16px;
+  }
+
+  .contentWork {
+    width: 70%;
     padding-left: 16px;
   }
 }
+
 /* Mobile View */
 @media screen and (max-width: 760px) {
   header h1 {
@@ -299,5 +307,28 @@ p {
     width: 75%;
     padding-left: 0;
     align-items: flex-start;
+  }
+
+  .contentWork {
+    flex-direction: grid;
+    border-left: 0px;
+    border-top: 4px solid var(--englishViolet);
+    margin: 2.5%;
+    width: 95%;
+    padding-left: 0;
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+    gap: 1%;
+    height: 760px;
+  }
+
+  #projectOne {
+    grid-column: 1;
+    grid-row: 1 / 5;
+  }
+
+  .projectDetails {
+    font-size: small;
+    margin-bottom: 0;
   }
 }

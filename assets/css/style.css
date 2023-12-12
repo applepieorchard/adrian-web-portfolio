@@ -5,6 +5,12 @@
   --columbiaBlue: #BFD5E2;
   --honeydew: #ECFFF8;
 }
+
+::selection {
+  background-color: var(--hollywoodCerise);
+  color: var(--honeydew);
+}
+
 * {
   box-sizing: border-box;
 }
@@ -115,10 +121,11 @@ p {
 
 .pageSection h2 {
   padding: 8px 16px;
-  margin: 0 0 0 128px;
+  margin: 0 0 0 32px;
   background-color: var(--englishViolet);
   color: var(--hollywoodCerise);
   height: fit-content;
+  width: 224px;
   text-align: right;
 }
 
@@ -160,6 +167,7 @@ p {
 
   .pageSection h2 {
     margin: 0 0 0 5%;
+    width: 15%;
   }
 
   .contentAbout {
@@ -214,5 +222,4 @@ p {
     padding-left: 0;
     align-items: flex-start;
   }
-
 }

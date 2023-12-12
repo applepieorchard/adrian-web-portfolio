@@ -6,8 +6,15 @@ This webpage exists to showcase my portfolio of projects, currently it contains 
 
 Throughout this project I have applied the knowledge I have learned of both html tags and css styling in order to create a website that is responsive and viewable from smaller devices such as mobile phones and tablets.
 
+### Mobile
+
 ![A screenshot of the mobile view.](assets/images/phonePortrait.png)
+
+### Tablet
+
 ![A screenshot of the tablet view.](assets/images/tabletLandscape.png)
+
+### Desktop
 
 ![A screenshot of the desktop view.](assets/images/desktopView.png)
 
